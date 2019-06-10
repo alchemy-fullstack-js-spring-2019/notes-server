@@ -7,9 +7,14 @@
     "lib": "lib",
     "test": "tests"
   },
+  "jest": {
+    "testEnvironment": "node"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "test": "jest --runInBand --verbose",
+    "test:watch": "npm run test -- --watch",
+    "start": "node server.js",
+    "start:watch": "nodemon server.js"
   },
   "repository": {
     "type": "git",
@@ -21,5 +26,16 @@
   "bugs": {
     "url": "https://github.com/alchemy-fullstack-js-spring-2019/notes-server/issues"
   },
-  "homepage": "https://github.com/alchemy-fullstack-js-spring-2019/notes-server#readme"
+  "homepage": "https://github.com/alchemy-fullstack-js-spring-2019/notes-server#readme",
+  "dependencies": {
+    "dotenv": "^8.0.0",
+    "express": "^4.17.1",
+    "mongoose": "^5.5.14"
+  },
+  "devDependencies": {
+    "eslint": "^5.16.0",
+    "jest": "^24.8.0",
+    "nodemon": "^1.19.1",
+    "supertest": "^4.0.2"
+  }
 }

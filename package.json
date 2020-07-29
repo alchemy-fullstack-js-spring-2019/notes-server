@@ -28,7 +28,7 @@
   },
   "homepage": "https://github.com/alchemy-fullstack-js-spring-2019/notes-server#readme",
   "dependencies": {
-    "auth0": "^2.17.1",
+    "auth0": "^2.27.1",
     "cors": "^2.8.5",
     "dotenv": "^8.0.0",
     "express": "^4.17.1",
